@@ -12,6 +12,8 @@
     // Компилятор будет обрабатывать не только TS, но и JS файлы
     "allowJs": true,
     "moduleResolution": "node",
+    // Для абсолютных импортов
+    "baseUrl": ".",
     // esModuleInterop позволяет работать с пакетами, которые используют common js,
     // как с обычными пакетами с помощью import (require() module.export) = common js
     "esModuleInterop": true,
@@ -19,7 +21,7 @@
     // loaders вроде ts-loader или babel-loader автоматически создают их
     // и вместо такого импорта -> import * as React from 'react'
     // можно писать такой -> import React from 'react'
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "ts-node": {
     "compilerOptions": {
